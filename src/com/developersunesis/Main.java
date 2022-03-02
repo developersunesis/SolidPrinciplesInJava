@@ -1,7 +1,6 @@
 package com.developersunesis;
 
-import com.developersunesis.corrections.ocp.Employee;
-import com.developersunesis.corrections.srp.CupCookConverter;
+import com.developersunesis.goodfaith.dip.DesktopComputer;
 import com.developersunesis.goodfaith.isp.animals.Cat;
 import com.developersunesis.goodfaith.isp.animals.Fish;
 import com.developersunesis.goodfaith.lsp.IKing;
@@ -12,7 +11,6 @@ import com.developersunesis.goodfaith.srp.ICup;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
-import java.math.BigDecimal;
 
 public class Main {
 
@@ -32,6 +30,10 @@ public class Main {
 
         // Interface Segregation Principle
         I();
+        System.out.println();
+
+        // Dependency Inversion Principle
+        D();
         System.out.println();
     }
 
@@ -121,5 +123,10 @@ public class Main {
                 e.printStackTrace();
             }
         }
+    }
+
+    public static void D() {
+        DesktopComputer desktopComputer = new DesktopComputer();
+        desktopComputer.turnOn();
     }
 }
