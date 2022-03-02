@@ -1,4 +1,4 @@
-package com.developersunesis.goodfaith;
+package com.developersunesis.goodfaith.srp;
 
 public class ICup {
 

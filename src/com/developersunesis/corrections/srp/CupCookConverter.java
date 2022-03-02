@@ -1,6 +1,6 @@
 package com.developersunesis.corrections.srp;
 
-import com.developersunesis.goodfaith.ICup;
+import com.developersunesis.goodfaith.srp.ICup;
 
 import java.util.Arrays;
 

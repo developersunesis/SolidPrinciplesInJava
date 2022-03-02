@@ -1,0 +1,2 @@
+- Create IAquatic for aquatic animals
+- Create ITerrestrial for terrestrial animals

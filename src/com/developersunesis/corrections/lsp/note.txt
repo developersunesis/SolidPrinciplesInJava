@@ -1,0 +1,2 @@
+- Add a flag isProdigal in IPrince indicating when the prince is prodigal or not
+- Ignore running sitOnThrone(...) functionality if isProdigal is true or give a graceful error
