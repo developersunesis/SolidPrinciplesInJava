@@ -1,5 +1,7 @@
 package com.developersunesis.violations;
 
+import java.util.Arrays;
+
 public class JCup {
 
     private int length;
@@ -37,9 +39,13 @@ public class JCup {
         this.height = height;
     }
 
+    public int volume() {
+        return length * breadth * height;
+    }
+
     public void cook(String... foodItems){
-        for(String foodItem : foodItems){
-            System.out.println(foodItem);
+        for(int i = 0; i < volume(); i++) {
+            Arrays.stream(foodItems).forEach(System.out::println);
         }
     }
 }

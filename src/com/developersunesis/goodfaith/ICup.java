@@ -36,4 +36,8 @@ public class ICup {
     public void setHeight(int height) {
         this.height = height;
     }
+
+    public int volume() {
+        return length * breadth * height;
+    }
 }
