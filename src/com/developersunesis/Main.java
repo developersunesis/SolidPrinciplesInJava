@@ -1,6 +1,6 @@
 package com.developersunesis;
 
-import com.developersunesis.corrections.CupCookConverter;
+import com.developersunesis.corrections.srp.CupCookConverter;
 import com.developersunesis.goodfaith.ICup;
 import com.developersunesis.violations.JCup;
 
@@ -14,16 +14,16 @@ public class Main {
     }
 
     private static void S(){
-        ICup iCup = new ICup(5, 20, 10);
+        ICup iCup = new ICup(5, 2, 5);
         System.out.println(iCup.volume());
 
-        JCup jCup = new JCup(5, 20, 10);
+        JCup jCup = new JCup(5, 2, 5);
         System.out.println(jCup.volume());
 
         String[] foodIngredients = { "Rice", "Salt", "Water", "Onions" };
         jCup.cook(foodIngredients);
 
-        // Correction is to create a converter for cup to be extended for cooking use
+        // Correction:: create a converter for cup to be extended for cooking use
         CupCookConverter cupCookConverter = new CupCookConverter(iCup);
         cupCookConverter.cook(foodIngredients);
     }

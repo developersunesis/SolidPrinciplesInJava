@@ -1,4 +1,4 @@
-package com.developersunesis.corrections;
+package com.developersunesis.corrections.srp;
 
 import com.developersunesis.goodfaith.ICup;
 
